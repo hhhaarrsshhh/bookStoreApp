@@ -1,0 +1,13 @@
+libraries used
+
+->project installed using create vite
+
+->react slick(for slider carouseel)
+->react hook form
+->daisyUi
+->tailwindcss
+->react router dom
+->.env installed
+->nodemon installed
+->axios
+->cors installed in backend

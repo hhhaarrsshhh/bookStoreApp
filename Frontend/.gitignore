@@ -1,0 +1,16 @@
+# Node modules (dependencies)
+node_modules
+
+# Environment variables (API URL)
+.env
+
+# Build output (production build)
+dist
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
