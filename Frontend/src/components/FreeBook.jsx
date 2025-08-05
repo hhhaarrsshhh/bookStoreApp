@@ -11,7 +11,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.VITE_API_URL}/book`);
+        const res = await axios.get(`http://localhost:3001/book`);
 
         // Filter only books with category "free"
         const data = res.data.filter(
