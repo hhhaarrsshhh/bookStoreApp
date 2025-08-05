@@ -6,4 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   darkMode:"class",
   plugins: [react(),    tailwindcss()  ],
+  base: "./" 
 })
