@@ -7,7 +7,7 @@ const Course = () => {
  useEffect(() => {
   const getBook = async () => {
     try {
-const res = await axios.get(`http://localhost:3001/book`);
+const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`);
       console.log(res.data);  // Fixed the typo: comma to period
       setBook(res.data);
     } catch (err) {
