@@ -49,7 +49,7 @@ const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`);
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          
         },
       },
       {
@@ -72,11 +72,17 @@ const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`);
         </p>
       </div>
 
-      <Slider {...settings}>
-        {book.map((item) => (
-          <Card item={item} key={item._id} />
-        ))}
-      </Slider>
+      {/* Only show slider when data is loaded */}
+{book.length > 0 ? (
+  <Slider key={book.length} {...settings}>
+    {book.map((item) => (
+      <Card item={item} key={item._id} />
+    ))}
+  </Slider>
+) : (
+  <p className="text-center py-10">Loading...</p>
+)}
+
     </div>
   );
 }
