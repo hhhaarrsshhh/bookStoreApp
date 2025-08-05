@@ -35,7 +35,7 @@ const Login = () => {
     };
 
     // Making POST request to login API
-    await axios.post("http://localhost:3001/user/login", userInfo)
+    await axios.post("https://bookstoreapp-1-dxg9.onrender.com/user/login", userInfo)
       .then((res) => {
         console.log(res.data);
 
