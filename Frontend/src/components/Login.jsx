@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // React Hook Form for form state handling and validation
 import { useForm } from "react-hook-form";
-// Axios for making HTTP requests
+// Axios for making HTTP requestss
 import axios from 'axios';
 // Toast for showing popup messages
 import { toast } from 'react-hot-toast';
@@ -17,7 +17,7 @@ const Login = () => {
   const location = useLocation();
 
   // Getting the route user came from, or fallback to "/"
-  const from = location.state?.from?.pathname || "/";
+  const from = location.state?.from?.pathname || "/";// ;ocation.state gets undefined 
 
   // Destructuring form utilities from useForm
   const {
