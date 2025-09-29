@@ -3,7 +3,7 @@ import Login from './Login';
 import { useAuth } from '../context/AuthProvider';
 import Logout from './Logout';
 const Navbar = () => {
- const[authUser,setAuthUser]=useAuth()
+ const[authUser,_setAuthUser]=useAuth()
   const [sticky, setSticky] = useState(false);
 
  useEffect(() => {
